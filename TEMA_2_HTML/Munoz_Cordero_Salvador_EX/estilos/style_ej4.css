@@ -1,0 +1,18 @@
+table{
+    border: 2px solid black;
+}
+thead{
+    background-color: rgb(139, 243, 69);
+    font-family: sans-serif;
+}
+tfoot{
+    background-color: rgb(68, 139, 247);
+    font-family: sans-serif;
+}
+td{
+    font-family: sans-serif;
+}
+.enviar{
+    height: 40px; 
+    text-align: right;
+}
