@@ -1,0 +1,9 @@
+body h1, h2, strong, tr td:last-child, ul li ul li, a:hover, a:visited, input, #twitter {
+    color: red;
+}
+tr td:first-child, form label {
+    color: blue;
+}
+body {
+    width: 50%;
+}

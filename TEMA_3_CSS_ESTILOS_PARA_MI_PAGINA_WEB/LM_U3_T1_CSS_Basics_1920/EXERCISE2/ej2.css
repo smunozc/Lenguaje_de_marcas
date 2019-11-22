@@ -1,0 +1,31 @@
+table{
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+thead tr th {
+    background-color: rgb(167, 167, 167);
+    color: rgb(40, 40, 165);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+   
+}
+tbody tr td h2{
+    color: rgb(116, 20, 20);
+    font-family: serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: 200;
+}
+tbody tr:nth-child(1) td h2{
+    padding-top: 60px;
+}
+/*Años en negrita*/
+tbody tr td.year{
+    font-weight: bold;
+}
+tbody tr td {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
