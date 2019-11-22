@@ -25,7 +25,7 @@ Fuente: http://desarrolloweb.dlsi.ua.es/cursos/2011/html5-css3/css-exercises
 Dado el siguiente código HTML:
 
 
- <img src="exercise1_solution_files/logo.gif" alt="GirlDevelopIt Logo" width="300">
+ \*<img src="exercise1_solution_files/logo.gif" alt="GirlDevelopIt Logo" width="300">
 
   <h1>About</h1>
  
@@ -100,6 +100,7 @@ Dado el siguiente código HTML:
   
   <br><br>
   <a id="twitter" href="http://twitter.com/girldevelopit">Twitter</a> | <a href="http://www.facebook.com/girldevelopit">Facebook</a> | <a href="http://www.flickr.com/photos/40453677@N00/sets/72157626841092971/">Flickr</a>
+\*
 
 Añadir los estilos para conseguir la siguiente imagen:
 ![Imagen Ejercicio 3](./img/ej3.png)
