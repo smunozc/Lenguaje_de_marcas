@@ -1,4 +1,4 @@
-## EJERCICIO 1: (ej1.html y ej1.css)
+# EJERCICIO 1: (ej1.html y ej1.css)
 
 Dada la siguiente tabla:
 
@@ -12,7 +12,7 @@ Hacer que cuando paso el ratón por las filas cambie su color de fondo y el colo
       <tr><td>Lola</td><td>@lolaman</td><td>555-6666</td></tr>
       <tr><td>Sara</td><td>@saraman</td><td>777-8888</td></tr>
  </table>
-## EJERCICIO 2: (ej2.html, ej2.css)
+# EJERCICIO 2: (ej2.html, ej2.css)
 
 Realiza el HTML y CSS necesario para conseguir una página similar a la siguiente:
 
@@ -20,7 +20,7 @@ Realiza el HTML y CSS necesario para conseguir una página similar a la siguient
 
 Fuente: http://desarrolloweb.dlsi.ua.es/cursos/2011/html5-css3/css-exercises
 
-## EJERCICIO 3: (ej3.html y ej3.css)
+# EJERCICIO 3: (ej3.html y ej3.css)
 
 Dado el siguiente código HTML:
 
