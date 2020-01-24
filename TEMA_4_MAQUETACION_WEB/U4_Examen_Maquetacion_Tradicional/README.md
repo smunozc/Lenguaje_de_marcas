@@ -78,6 +78,6 @@ Usando el siguiente código HTML
 ```
 Crear una layout css que sea lo más similar posible a la siguiente imagen:
 
-![Imagen](.\diseño1.png) 
+![Imagen](./diseno1.png) 
 
 NOTA: Al pasar el ratón por el menú deberá cambiar el color de los elementos del menú
