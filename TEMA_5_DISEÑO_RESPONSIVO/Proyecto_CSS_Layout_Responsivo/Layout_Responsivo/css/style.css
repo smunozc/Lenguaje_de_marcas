@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(211, 168, 76);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: [uno] 300px [dos] 300px [tres] 300px [cuatro];
+    grid-row-gap: 15px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
