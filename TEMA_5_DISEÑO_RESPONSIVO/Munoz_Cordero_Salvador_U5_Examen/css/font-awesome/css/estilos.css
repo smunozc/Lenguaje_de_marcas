@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+/*Quitar estilos por defecto*/
+body, h1, h2, h3, h4{
+    margin: 0px;
+}
+
+/*Padding de las cajas y centrado de su contenido*/
+main, .teams{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Header*/
+.container header{
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.container header img{
+    width: 10%;
+}
+.container header i{
+    color: white;
+}
+.container header nav{
+    display: none;
+}
+
+/*Main*/
+main{
+    background-color: rgb(53, 53, 53);   
+}
+.built-for{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.built-for p{
+    font-size: 70%;
+}
+.register{
+    display: flex;
+    justify-content: center;
+}
+.register form > label, .register form > input, .register form > p{
+    display: none;
+}
+.register form button{
+    background-color: green;
+    border-radius: 5px;
+    border-style: none;
+    height: 2rem;
+    color: white;
+}
+.register form button:hover{
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid green;
+    height: 2rem;
+    color: green;
+}
+
+/*Section clase teams*/
+#sign-up{
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding-top: 10px;
+    width: 10rem;
+}
+
+/*Section better code*/
+.better-code{
+    padding: 20px;
+    text-align: center;
+}
+.better-code .imagen1 img{
+    width: 40%;
+}
+
+/*Breakpoints*/
+
+@media (min-width: 576px){
+    /*Cambio de tamaño de la fuente*/
+    .built-for p{
+        font-size: 85%;
+    }
+    /*muestra los elementos ocultos*/
+    .register form > label, .register form > input, .register form > p{
+        display: flex;
+    }
+    /*formato del formulario*/
+    .register form{
+        background-color: white;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        width: 95%;
+    }
+    /*Etiquetas*/
+    .register form > label {
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    /*Input*/
+    .register form > input{
+        border-style: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        height: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px){
+    /*Oculta el icono de menú y muestra el menú*/
+    .container header{
+        justify-content: start;
+        align-items: center;
+    }
+    .container header i{
+        display: none;
+    }
+    .container header nav{
+        color: white;
+        display: inline-block;
+        width: 50%;
+    }
+    .container header nav ul{
+        display: flex;
+        list-style: none;
+        font-size: 1.5rem;
+        padding-left: 5px;
+        justify-content: space-between;
+    }
+    /*Cambia el main de flex a grid para recolocar los elementos*/
+    main{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: [uno] [dos];
+        grid-column-gap: 10%;
+    }
+    .built-for{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: uno;
+        grid-row-end: dos;
+    }
+    .built-for p{
+        font-size: 95%;
+    }
+    .register{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: uno;
+        grid-row-end: dos;
+    }
+    /*la clase better code cambia a grid*/
+    .better-code{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: [uno] [dos];
+    }
+    .better-code .imagen1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: uno;
+        grid-row-end: dos;
+        width: 100%;
+    }
+    .better-code .imagen1 img{
+        width: 80%;
+    }
+    .better-code .textos{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: uno;
+        grid-row-end: dos;
+        justify-content: center;
+        width: 100%;
+    }
+    .better-code .textos div{
+        width: 45%;
+    }
+}
