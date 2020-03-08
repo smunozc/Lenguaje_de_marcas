@@ -6,21 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Layout Responsivo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <input type="search">
-            <div class="title_menu">
+        <header>
+            <nav class="menu">
+                <div class="icon"><img src="./img/icono_menu.png" alt="icono menu"></div>
+                <div class="menu_item">Home</div>
+                <div class="menu_item">Portfolio</div>
+                <div class="menu_item">About</div>
+                <div class="menu_item">Contact</div>
+            </nav>
+            <div class="titulo">
                 <h1>Edison Colors</h1>
-                <div class="menu">
-                    <div>Home</div>
-                    <div>Portfolio</div>
-                    <div>About</div>
-                    <div>Contact</div>
-                </div>
+                <h4>Lorem ipsum</h4>
             </div>
-        </div>
+            <div class="search_bar"><input type="search" placeholder="Buscar..."></div>
+        </header>
         <div class="body">
             <div class="main_text">
                 <h2>Lorem ipsum dolor sit amet</h2>
@@ -33,23 +41,25 @@
                     Donec interdum justo faucibus, fringilla odio et, fermentum metus. 
                     Phasellus sit amet venenatis lectus, in lobortis tellus.
                 </p>
-                <img src="./img/Circulos_derecha.png" alt="circulos diseño layout derecha">
             </div>
+            <img src="./img/Circulos_derecha.png" alt="circulos diseño layout derecha">
             <div class="what_we_do">
                 <h2>What we do</h2>
                 <div>
-                    <p>DesignDevelopment</p>
-                    <a href="www.google.com" target="_blank">See More</a>
-                    <div class="Design">
-                        <p>Design</p>
+                    <div class="more">
+                        <p>DesignDevelopment</p>
+                        <a href="www.google.com" target="_blank">See More</a>
+                    </div>
+                    <div class="design">
+                        <h3>Design</h3>
                         <p>metus commodo</p>
                     </div>
-                    <div class="Development">
-                        <p>Development</p>
+                    <div class="development">
+                        <h3>Development</h3>
                         <p>vel interdum</p>
                     </div>
-                    <div class="Consultation">
-                        <p>Consultation</p>
+                    <div class="consultation">
+                        <h3>Consultation</h3>
                         <p>semper urna</p>
                     </div>
                 </div>
@@ -62,5 +72,19 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function() {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function() {
+            $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu_item").show();
+            }
+            });
+        });
+    </script>
 </body>
 </html>

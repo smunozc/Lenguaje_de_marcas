@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body, h1, h2, p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    background-color: rgb(211, 168, 76);
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly
+    ;
+}
+.menu_lateral{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.icon{
+    align-self: center;
+    width: 10px;
+}
+.search{
+    align-self: flex-end;
+    width: 5%;
+}
+.body > img{
+    display: none;
+}
+.main_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main_text h2{
+    width: 100%;
+}
+.main_text img{
+    width: 40%;
+    align-self: center;
+}
+.main_text p{
+    width: 50%;
+}

@@ -1,18 +1,288 @@
 *{
     box-sizing: border-box;
 }
-.container{
-    background-color: rgb(211, 168, 76);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: [uno] 300px [dos] 300px [tres] 300px [cuatro];
-    grid-row-gap: 15px;
-    align-content: center;
-    justify-content: center;
+/*Eliminar propiedades por defecto*/
+body, h1, h2, h3, h4, p{
+    padding: 0px;
+    margin: 0px;
+}
+/*Color de fondo*/
+body{
+    background-color: rgb(231, 207, 154);
+}
+/*Esilo de fuentes*/
+h2{
+    font-family: 'Kaushan Script', cursive;
+}
+p, a, h1, div, h3, .latest h2{
+    font-family: 'Teko', sans-serif;
+}
+/*Padding de las cajas .header y .body*/
+header, .body{
+    padding: 20px;
+}
+/*Cabecera*/
+header{
+    align-items: center;
+    background-color: rgb(80, 62, 50);
+    border-bottom: 10px solid rgb(255, 145, 0);
+    display: flex;
+    justify-content: space-between;
+}
+/*-Titulo del header*/
+header .titulo{
+    order: 1;
+    width: 40%;
+}
+header .titulo{
+    color: rgb(0, 145, 120);
+}
+/*Subtitulo de header oculto*/
+header .titulo > h4{
+    display: none;
+}
+/*-Barra de busqueda*/
+.search_bar{
+    background-color: rgb(80, 62, 50);
+    order: 2;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.search_bar input[type="search"]{
+    background: #ededed /*url("../img/icono_lupa.png") no-repeat 9px center*/; /*icono lupa*/
+    border-radius: 15em;
+    outline: none; /* ocultar el focus automático de los input */
+    padding: 9px 10px 9px 32px;
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el focus automático de los input */
+    width: 2rem;
+}
+.search_bar input[type="search"]:focus{
+    width: 100px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: rgb(124, 99, 45);
+    background-color: #FFF;
+}
+/*-Menu lateral*/
+.menu{
+    color: rgb(0, 145, 120);
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 0;
+    width: 30%;
+}
+.menu_item:hover{
+    background-color: rgb(53, 41, 33);
+}
+.icon img{
+    width: 50px
+}
+
+/*Body*/
+/*Separación de cajas*/
+.main_text, .what_we_do, .latest{
+    padding-bottom: 20px;
+}
+/*-Texto principal dentro del body*/
+.main_text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_text h2{
+    padding: 10px;
+    text-align: center;
     width: 100%;
 }
-.header{
+.main_text img{
+    align-self: center;
+    width: 30%;
+}
+.main_text p{
+    font-size: 1.1rem;
+    width: 65%;
+}
+/*-Imagen diseño dentro del body*/
+.body > img{
+    display: none;
+}
+/*-What we do dentro del body*/
+/*--color de la caja y posicion de las cajas hijas*/
+.what_we_do > div{
+    align-items: center;
+    background-color: rgb(80, 62, 50);
+    color: rgb(255, 145, 0);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.what_we_do div div{
+    padding: 5px;
+}
+/*--Formato de "Design Development" y de "See more"*/
+.more{
+    align-items: center;
+    border-bottom: 2px solid rgb(128, 101, 86);
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    padding-bottom: 5px;
     width: 100%;
-    flex-wrap: nowrap;
+}
+/*---Cambiar formato especifico de "DesignDevelopment"*/
+.more p{
+    font-size: 1.3rem;
+}
+/*---Cambiar formato específico de "See more"*/
+.more a{
+    background-color: rgb(255, 181, 85);
+    color: rgb(80, 62, 50);
+    padding: 5px;
+    padding-right: 10%;
+    text-decoration: none;
+}
+/*---Posicionamiento de textos en las cajas design, development y consultation*/
+.design h3, .development h3, .consultation h3{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+/*-Latest blog entries dentro del body*/
+/*--Modifico las cajas del texto para que tengan bordes y estén separadas*/
+.latest p{
+    border: 1px solid rgb(128, 101, 86);
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+@media (min-width: 576px){
+    /*Cambio de tamaño de fuente y otros elementos*/
+    .search_bar input[type="search"]:focus{
+        width: 200px;
+    }
+    .main_text h2{
+        font-size: 1.7rem;
+    }
+    .main_text p, .latest > p, .design p, .development p, .consultation p{
+        font-size: 1.2rem;
+    }
+    .what_we_do > h2, .what_we_do .more p, .latest > h2{
+        font-size: 2rem;
+    }
+    .what_we_do .more a{
+        padding-right: 20%;
+    }
+    .design h3, .development h3, .consultation h3, .what_we_do .more a{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px){
+    /*Rehacer el header*/
+    header{
+        border-bottom: none;
+        border-top: 10px solid rgb(255, 145, 0);
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+    header .titulo{
+        text-align: end;
+        margin: 0px;
+        order: 0;
+        width: 30%;
+    }
+    header .titulo h1{
+        font-size: 2.5rem;
+    }
+    header .titulo h4{
+        display: inline-block;
+    }
+    header .menu{
+        font-size: 1.5rem;
+        order: 1;
+        width: 50%;
+    }
+    .search_bar{
+        margin-left: auto;
+        order: 2;
+        padding: 0px;
+        padding-bottom: 20px;
+        text-align: right;
+        width: 45%;
+    }
+    .search_bar input[type="search"]{
+        width: 300px; /*tamaño del boton buscar al hacer click*/
+    }
+    .search_bar input[type="search"]:focus{
+        width: 300px;
+    }
+    header .icon{
+        display: none;
+    }
+    /*display y colocacion de imagen a la derecha*/
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .body > img{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 25%;
+    }
+    /*reducir tamaños de texto principal*/
+    .main_text img{
+        width: 20%;
+    }
+    .main_text h2{
+        font-size: 2rem;
+        padding-left: 5%;
+        text-align: start;
+    }
+    .main_text p{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+    /*reducir tamaños de .what_we_do*/
+    .what_we_do{
+        width: 50%;
+    }
+    .what_we_do .more a{
+        font-size: 1.2rem;
+        padding: 10px;
+        padding-right: 15%;
+    }
+    .what_we_do .more p{
+        font-size: 1.4rem;
+    }
+    .what_we_do .design h3, .what_we_do .development h3, .what_we_do .consultation h3{
+        font-size: 1.3rem;
+    }
+    .latest{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5%;
+        width: 35%;
+    }
+    .latest p{
+        border: none;
+    }
+    /*Colocar el menu en fila*/
+    .menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 3%;
+    }
+    .menu div{
+        padding: 30px;
+    }
 }
