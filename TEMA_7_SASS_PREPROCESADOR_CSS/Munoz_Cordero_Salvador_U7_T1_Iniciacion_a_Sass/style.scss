@@ -1,0 +1,105 @@
+//Variables
+//Colores
+    $color-fondo: rgb(144, 170, 255);
+//Displays
+    $display-hijos-main: flex;
+    $display-hijos-categoria: flex;
+//Anchura General
+    $anchura: 90%;
+    $anchura-hijos: 90%;
+    //foto
+    $anchura-foto-movil: 30%;
+    $anchura-foto-tablet: 20%;
+    $anchura-foto-pc: 15%;
+    //tamaño fuente
+    $font-size-movil: 1.1rem;
+    $font-size-tablet: 1.2rem;
+    $font-size-pc: 1.4rem;
+    //centrado de caja
+    $centrado: 0px auto;
+//Bordes
+    $borde-general: 2px solid black;
+    $radius-general: 5px;
+
+/*Quitar estilos por defecto*/
+body, h1, h2, h3, h4{
+    margin: 0px;
+}
+
+/*Cambiar tamaño de fuente a todos los elementos del container*/
+.container{
+    font-size: $font-size-movil;
+}
+/*Estilos del Main*/
+main{
+    margin: $centrado;
+    width: $anchura;
+    /*Quitar modificaciones generales para la caja foto*/
+    .foto{
+        background-color: unset;
+        border: none;
+        padding-top: 20px;
+        width: 100%;
+        /*Modificar anchura y borde de la foto*/
+        img{
+            width: $anchura-foto-movil;
+            border: $borde-general;
+        }
+    }
+    /*Modificar elementos específicos de la caja idiomas*/
+    .idiomas {
+        div:nth-child(2){
+            width: 100%;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+    /*Modificaciones generales de las cajas hijas del main*/
+    >div{
+        background-color: $color-fondo;
+        border: $borde-general;
+        border-radius: $radius-general;
+        display: $display-hijos-main;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 5px;
+        h2{
+            width: 100%;
+        }
+        div{
+            display: $display-hijos-categoria;
+            flex-wrap: wrap;
+        }
+        p{
+            width: $anchura-hijos;
+        }
+        p:nth-child(1){
+            font-weight: bold;
+        }
+    }
+}
+/*Breakpoint de tablet, disminuye el tamaño de la imagen y aumenta el tamaño de la fuente*/
+@media (min-width: 576px){
+    main{
+        font-size: $font-size-tablet;
+        .foto{
+            img{
+                width: $anchura-foto-tablet;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    main{
+        font-size: $font-size-pc;
+        .foto{
+            img{
+                width: $anchura-foto-pc;
+            }
+        }
+    }    
+}
