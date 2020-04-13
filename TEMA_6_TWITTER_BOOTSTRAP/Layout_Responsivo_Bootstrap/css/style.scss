@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Eliminar propiedades por defecto*/
+body, h1, h2, h3, h4, p{
+    padding: 0px;
+    margin: 0px;
+}
+
+//Color de fondo
+$color-claro: rgb(231, 207, 154);
+$color-intermedio: rgb(230, 193, 115);
+$color-oscuro: rgb(80, 62, 50);
+$color-letra-searchbar: rgb(139, 112, 54);
+$color-letra-header: rgb(68, 173, 151);
+
+//Estilo letra
+$estilo-h2-letra: 'Kaushan Script', cursive;
+$estilo-general-letra: 'Teko', sans-serif;
+    //Tamaño letra
+    $h1-size: 1.3rem;
+    $h2-size: 1.8rem;
+    $main-text-size: 1.2rem;
+    $menu-text-size: 1.3rem;
+    $whatwedo-text-size: 1.1rem;
+    $latest-text-size: 1.3rem;
+    //breakpoint 992px
+    $main-text-992-size: 1.5rem;
+
+//Tamaño icono del menu
+$menu-icon-size: 50%;
+//Anchura de cajas
+$ancho-h2-main-text: 70%;
+
+/*Esilo de fuentes*/
+h2{
+    font-family: $estilo-h2-letra;
+}
+p, a, h1, div, h3, h4, .latest h2{
+    font-family: $estilo-general-letra;
+}
+/*Color de fondo*/
+body{
+    background-color: $color-claro;
+}
+/*Header*/
+header{
+    background-color: $color-oscuro;
+    color: $color-letra-header;
+    nav{
+        .icon img{
+            width: $menu-icon-size;
+        }
+        .menu_item{
+            font-size: $menu-text-size;
+        }
+        .menu-link{
+            color: $color-letra-header;
+        }
+    }
+    .titulo {
+        font-weight: bold;
+    }
+}
+
+/*Main*/
+.main{
+    background-color: $color-claro;
+    .main_text div{
+        div div h2{
+            font-size: $h2-size;
+        }
+        p{
+            font-size: $main-text-size;
+        }
+    }
+    .what_we_do{
+        font-size: $whatwedo-text-size;
+    }
+    .latest{
+        font-size: $latest-text-size;
+    }
+}
+@media (min-width: 992px){
+    .main_text div p{
+        font-size: $main-text-992-size;
+    }
+}

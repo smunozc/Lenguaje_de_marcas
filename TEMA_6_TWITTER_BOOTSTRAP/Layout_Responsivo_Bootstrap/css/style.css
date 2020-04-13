@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Eliminar propiedades por defecto*/
+body, h1, h2, h3, h4, p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Esilo de fuentes*/
+h2 {
+  font-family: "Kaushan Script", cursive;
+}
+
+p, a, h1, div, h3, h4, .latest h2 {
+  font-family: "Teko", sans-serif;
+}
+
+/*Color de fondo*/
+body {
+  background-color: #e7cf9a;
+}
+
+/*Header*/
+header {
+  background-color: #503e32;
+  color: #44ad97;
+}
+
+header nav .icon img {
+  width: 50%;
+}
+
+header nav .menu_item {
+  font-size: 1.3rem;
+}
+
+header nav .menu-link {
+  color: #44ad97;
+}
+
+header .titulo {
+  font-weight: bold;
+}
+
+/*Main*/
+.main {
+  background-color: #e7cf9a;
+}
+
+.main .main_text div div div h2 {
+  font-size: 1.8rem;
+}
+
+.main .main_text div p {
+  font-size: 1.2rem;
+}
+
+.main .what_we_do {
+  font-size: 1.1rem;
+}
+
+.main .latest {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  .main_text div p {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
