@@ -1,0 +1,200 @@
+//Variables
+//Colores
+    $color-fondo: white;
+    $color-fondo-seccion: rgb(144, 170, 255);
+    $color-fuente: black;
+    $color-h2: rgb(45, 101, 255);
+    $color-link: black;
+//Displays
+    $display-hijos-main: flex;
+    $display-hijos-categoria: flex;
+    $display-main-pc: flex;
+    $display-caja-table: flex;
+//Anchura
+    //Breakpoints
+    $breakpoint-tablet: 576px;
+    $breakpoint-pc: 992px;
+    //General
+    $anchura: 90%;
+    $anchura-hijos: 90%;
+    $anchura-idioma-capacidad-pc: 40%;
+    //foto
+    $anchura-foto-movil: 30%;
+    $anchura-foto-tablet: 20%;
+    $anchura-foto-pc: 15%;
+    //tamaño fuente
+    $font-size-movil: 1.1rem;
+    $font-size-tablet: 1.2rem;
+    $font-size-pc: 1.4rem;
+    //centrado de caja
+    $centrado: 0px auto;
+//Bordes
+    $borde-general: 2px solid black;
+    $borde-tabla: 1px solid black;
+    $radius-general: 5px;
+
+//Bucle para los colores de la tabla
+    //Variables
+    $numero: 1;
+    $numero-de-filas: 7;
+    $lista-colores: green, red, rgb(255, 52, 177), rgb(62, 162, 255), yellow, gray, orange;
+
+    @for $i from $numero through $numero-de-filas {
+        .tabla_modulos table tr:nth-child(#{$i}){
+            background-color: nth($lista-colores, $i);
+        }
+    }
+    
+//Bucle para etiquetas h1-h6
+    //Variables
+    $numero-de-etiquetas: 6;
+    $lista-size: 4rem, 2.5rem, 2.3rem, 2rem, 1.5rem, 1.3rem;
+
+    @while $numero <= $numero-de-etiquetas{
+        h#{$numero}{
+            font-size: nth($lista-size, $numero);
+        }
+        $numero: $numero + 1;
+    }
+
+//Funcion calcular anchuras
+//La variable breakpoint pasada como parámetro determinará la anchura del container de la página
+    @function calcularAnchura($breakpoint){
+        @if $breakpoint == $breakpoint-pc{
+            @return $anchura - 20%;
+        } @else if $breakpoint == $breakpoint-tablet{
+            @return $anchura - 10%;
+        }
+    }
+
+//Cambiar de tema claro a tema oscuro
+$tema-oscuro: false;
+@if $tema-oscuro == true {
+    $color-fondo: rgb(36, 36, 36);
+    $color-fondo-seccion: rgb(90, 90, 90);
+    $color-h2: rgb(184, 184, 184);
+    $color-fuente: white;
+    $color-link: white;
+}
+
+/*Quitar estilos por defecto*/
+body, .container, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+
+/*Cambiar tamaño de fuente a todos los elementos del container*/
+.container{
+    background-color: $color-fondo;
+    font-size: $font-size-movil;
+    color: $color-fuente;
+    h2{
+        color: $color-h2;
+    }
+}
+/*Estilos del Main*/
+main{
+    margin: $centrado;
+    width: $anchura;
+    /*Quitar modificaciones generales para la caja foto*/
+    .foto{
+        background-color: unset;
+        border: none;
+        padding-top: 20px;
+        width: 100%;
+        /*Modificar anchura y borde de la foto*/
+        img{
+            width: $anchura-foto-movil;
+            border: $borde-general;
+        }
+    }
+    /*Modificar elementos específicos de la caja idiomas*/
+    .idiomas {
+        div:nth-child(2){
+            width: 100%;
+        }
+        a{
+            color: $color-link;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+    /*Modificaciones generales de las cajas hijas del main*/
+    >div{
+        background-color: $color-fondo-seccion;
+        border: $borde-general;
+        border-radius: $radius-general;
+        display: $display-hijos-main;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 5px;
+        h2{
+            width: 100%;
+        }
+        div{
+            display: $display-hijos-categoria;
+            flex-wrap: wrap;
+        }
+        p{
+            width: $anchura-hijos;
+        }
+        p:nth-child(1){
+            font-weight: bold;
+        }
+    }
+    .tabla_modulos{
+        display: $display-caja-table;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        >table{
+            margin: 20px;
+            border-spacing: 0;
+            width: 50%;
+            tr{
+                td{
+                    border: $borde-tabla;
+                }
+                td:nth-child(1){
+                    text-align: start;
+                }
+                td:nth-child(2){
+                    text-align: end;
+                }
+            }
+        }
+
+    }
+    .etiquetas_size{
+        width: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-tablet){
+    main{
+        width: calcularAnchura($breakpoint-tablet);
+        font-size: $font-size-tablet;
+        .foto{
+            img{
+                width: $anchura-foto-tablet;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-pc){
+    main{
+        width: calcularAnchura($breakpoint-pc);
+        display: $display-main-pc;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: $font-size-pc;
+        .foto{
+            img{
+                width: $anchura-foto-pc;
+            }
+        }
+        .idiomas, .capacidades{
+            width: $anchura-idioma-capacidad-pc;
+        }
+    }    
+}
