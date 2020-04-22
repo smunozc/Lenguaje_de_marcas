@@ -1,0 +1,11 @@
+//Funcion calcular anchuras
+//La variable breakpoint pasada como parámetro determinará la anchura del container de la página
+@function calcularAnchura($breakpoint) {
+    @if $breakpoint==$breakpoint-pc {
+        @return $anchura - 20%;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet {
+        @return $anchura - 10%;
+    }
+}

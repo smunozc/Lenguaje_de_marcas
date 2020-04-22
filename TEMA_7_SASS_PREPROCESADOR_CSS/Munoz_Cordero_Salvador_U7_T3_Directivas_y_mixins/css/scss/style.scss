@@ -1,0 +1,158 @@
+//import
+@import "variables.scss";
+@import "estructuras_repetitivas.scss";
+@import "funciones.scss";
+@import "temas.scss";
+@import "mixins.scss";
+@import "menu.scss";
+
+/*Quitar estilos por defecto*/
+body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+/*Cambiar tamaño de fuente a todos los elementos del container*/
+.container {
+    background-color: $color-fondo;
+    font-size: $font-size-movil;
+    color: $color-fuente;
+
+    h2 {
+        color: $color-h2;
+    }
+}
+
+/*Estilos del Main*/
+main {
+    @include centrado_bloque;
+    width: $anchura;
+
+    /*Quitar modificaciones generales para la caja foto*/
+    .foto {
+        background-color: unset;
+        border: none;
+        padding-top: 20px;
+        width: 100%;
+
+        /*Modificar anchura y borde de la foto*/
+        img {
+            width: $anchura-foto-movil;
+            border: $borde-general;
+        }
+    }
+
+    /*Modificar elementos específicos de la caja idiomas*/
+    .idiomas {
+        @include centrado_enLinea;
+
+        div:nth-child(2) {
+            width: 100%;
+        }
+
+        a {
+            color: $color-link;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+
+    /*Modificaciones generales de las cajas hijas del main*/
+    >div {
+        background-color: $color-fondo-seccion;
+        border: $borde-general;
+        border-radius: $radius-general;
+        display: $display-hijos-main;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 5px;
+
+        h2 {
+            width: 100%;
+        }
+
+        div {
+            display: $display-hijos-categoria;
+            flex-wrap: wrap;
+        }
+
+        p {
+            width: $anchura-hijos;
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+        }
+    }
+
+    .tabla_modulos {
+        display: $display-caja-table;
+        justify-content: center;
+        width: 100%;
+
+        >table {
+            margin: 20px;
+            border-spacing: 0;
+            width: 50%;
+
+            tr {
+                td {
+                    border: $borde-tabla;
+                }
+
+                td:nth-child(1) {
+                    text-align: start;
+                }
+
+                td:nth-child(2) {
+                    text-align: end;
+                }
+            }
+        }
+
+    }
+
+    .etiquetas_size {
+        width: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    main {
+        width: calcularAnchura($breakpoint-tablet);
+        font-size: $font-size-tablet;
+
+        .foto {
+            img {
+                width: $anchura-foto-tablet;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-pc) {
+    main {
+        width: calcularAnchura($breakpoint-pc);
+        display: $display-main-pc;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: $font-size-pc;
+
+        .foto {
+            img {
+                width: $anchura-foto-pc;
+            }
+        }
+
+        .idiomas,
+        .capacidades {
+            width: $anchura-idioma-capacidad-pc;
+        }
+    }
+}
