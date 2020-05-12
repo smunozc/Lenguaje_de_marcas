@@ -1,0 +1,27 @@
+/*Estilos menu sticky*/
+.menu_sticky {
+    @include centrado_enLinea;
+    background-color: $color-fondo;
+    border-bottom: $borde-general;
+    display: $display-menu;
+    flex-wrap: $flex-wrap-menu-movil;
+    position: sticky;
+    top: 0;
+
+    div {
+        background-color: $color-fondo-seccion;
+        padding: 10px;
+        width: $anchura-div-menu;
+
+        a {
+            color: $color-fuente;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet){
+    .menu_sticky{
+        flex-wrap: $flex-wrap-menu-pc;
+    }
+}

@@ -1,0 +1,37 @@
+//Variables
+//Colores
+$color-fondo: white;
+$color-fondo-seccion: rgb(144, 170, 255);
+$color-fuente: black;
+$color-h2: rgb(45, 101, 255);
+$color-link: black;
+//Displays
+$display-hijos-main: flex;
+$display-hijos-categoria: flex;
+$display-main-pc: flex;
+$display-caja-table: flex;
+$display-menu: flex;
+$flex-wrap-menu-pc: nowrap;
+$flex-wrap-menu-movil: wrap;
+//Anchura
+//Breakpoints
+$breakpoint-tablet: 576px;
+$breakpoint-pc: 992px;
+//General
+$anchura: 90%;
+$anchura-hijos: 90%;
+$anchura-idioma-capacidad-pc: 40%;
+//Div menu
+$anchura-div-menu: 100%;
+//foto
+$anchura-foto-movil: 30%;
+$anchura-foto-tablet: 20%;
+$anchura-foto-pc: 15%;
+//tamaño fuente
+$font-size-movil: 1.1rem;
+$font-size-tablet: 1.2rem;
+$font-size-pc: 1.4rem;
+//Bordes
+$borde-general: 2px solid black;
+$borde-tabla: 1px solid black;
+$radius-general: 5px;
