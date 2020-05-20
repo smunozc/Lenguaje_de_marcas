@@ -1,0 +1,12 @@
+////@access public
+////@author Salvador Muñoz
+
+/// Mixin para centrar un bloque en su padre
+@mixin centrado_bloque {
+    margin: 0px auto;
+}
+
+/// Mixin para centrar elementos en linea dentro de un bloque
+@mixin centrado_enLinea {
+    text-align: center;
+}

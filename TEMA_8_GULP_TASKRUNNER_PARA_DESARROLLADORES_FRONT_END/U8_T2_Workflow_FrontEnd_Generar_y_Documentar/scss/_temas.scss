@@ -1,0 +1,15 @@
+////@access public
+////@author Salvador Muñoz
+
+
+///@group temas
+$tema-oscuro: false;
+
+///Cambiar de tema claro a tema oscuro
+@if $tema-oscuro==true {
+    $color-fondo: rgb(36, 36, 36);
+    $color-fondo-seccion: rgb(90, 90, 90);
+    $color-h2: rgb(184, 184, 184);
+    $color-fuente: white;
+    $color-link: white;
+}

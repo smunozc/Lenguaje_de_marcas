@@ -1,0 +1,75 @@
+////@access public
+////@author Salvador Muñoz
+
+///Variables
+
+/// @group colores
+$color-fondo: white;
+/// @group colores
+$color-fondo-seccion: rgb(144, 170, 255);
+/// @group colores
+$color-fuente: black;
+/// @group colores
+$color-h2: rgb(45, 101, 255);
+/// @group colores
+$color-link: black;
+
+/// @group displays
+$display-hijos-main: flex;
+/// @group displays
+$display-hijos-categoria: flex;
+/// @group displays
+$display-main-pc: flex;
+/// @group displays
+$display-caja-table: flex;
+/// @group displays
+$display-menu: flex;
+/// @group displays
+$flex-wrap-menu-pc: nowrap;
+/// @group displays
+$flex-wrap-menu-movil: wrap;
+
+
+///Breakpoints
+
+/// @group dimensiones
+$breakpoint-tablet: 576px;
+/// @group dimensiones
+$breakpoint-pc: 992px;
+
+///General
+
+/// @group dimensiones
+$anchura: 90%;
+/// @group dimensiones
+$anchura-hijos: 90%;
+/// @group dimensiones
+$anchura-idioma-capacidad-pc: 40%;
+
+///Div menu
+
+/// @group dimensiones
+$anchura-div-menu: 100%;
+
+///foto
+
+/// @group dimensiones
+$anchura-foto-movil: 30%;
+/// @group dimensiones
+$anchura-foto-tablet: 20%;
+/// @group dimensiones
+$anchura-foto-pc: 15%;
+
+/// @group font-size
+$font-size-movil: 1.1rem;
+/// @group font-size
+$font-size-tablet: 1.2rem;
+/// @group font-size
+$font-size-pc: 1.4rem;
+
+/// @group bordes
+$borde-general: 2px solid black;
+/// @group bordes
+$borde-tabla: 1px solid black;
+/// @group bordes
+$radius-general: 5px;

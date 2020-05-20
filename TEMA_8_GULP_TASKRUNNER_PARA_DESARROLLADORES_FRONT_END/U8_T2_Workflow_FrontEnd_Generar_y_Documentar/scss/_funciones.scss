@@ -1,0 +1,21 @@
+//// @access public
+//// @author Salvador Muñoz
+
+/// @group funciones
+/// Funcion calcular anchuras.
+/// La variable breakpoint pasada como parámetro determinará la anchura del container de la página.
+/// @parameter {pixel} $breakpoint - Valor de la anchura minima de la que dependera 
+/// la anchura de elementos del breakpoint.
+/// @example scss - Funcion calcularAnchura
+/// width: calcularAnchura($breakpoint-tablet);
+@function calcularAnchura($breakpoint) {
+
+    @if $breakpoint==$breakpoint-pc {
+        @return $anchura - 20%;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet {
+        @return $anchura - 10%;
+    }
+
+}

@@ -1,0 +1,42 @@
+//// @access public
+//// @author Salvador Muñoz
+
+/// @group bucles
+$numero: 1;
+/// @group bucles
+$numero-de-filas: 7;
+/// @group bucles 
+$lista-colores: green,
+red,
+rgb(255, 52, 177),
+rgb(62, 162, 255),
+yellow,
+gray,
+orange;
+
+///Bucle para los colores de la tabla
+/// @group bucles
+@for $i from $numero through $numero-de-filas {
+    .tabla_modulos table tr:nth-child(#{$i}) {
+        background-color: nth($lista-colores, $i);
+    }
+}
+
+/// @group bucles
+$numero-de-etiquetas: 6;
+/// @group bucles
+$lista-size: 4rem,
+2.5rem,
+2.3rem,
+2rem,
+1.5rem,
+1.3rem;
+
+///Bucle para etiquetas h1-h6
+/// @group bucles
+@while $numero <=$numero-de-etiquetas {
+    h#{$numero} {
+        font-size: nth($lista-size, $numero);
+    }
+    $numero: $numero+1;
+}

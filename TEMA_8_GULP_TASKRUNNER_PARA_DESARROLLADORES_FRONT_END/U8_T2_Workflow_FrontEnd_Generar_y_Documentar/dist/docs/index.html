@@ -1,0 +1,273 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Tarea_2_u8 - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Tarea_2_u8 - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Proyecto CV con gulp y documentación</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Tarea_2_u8 - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="bordes"><a href="#bordes">bordes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="bordes-variable"><a href="#bordes-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="bordes" data-name="borde-general" data-type="variable"><a href="#bordes-variable-borde-general">borde-general</a></li><li class="sidebar__item sassdoc__item" data-group="bordes" data-name="borde-tabla" data-type="variable"><a href="#bordes-variable-borde-tabla">borde-tabla</a></li><li class="sidebar__item sassdoc__item" data-group="bordes" data-name="radius-general" data-type="variable"><a href="#bordes-variable-radius-general">radius-general</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="bucles"><a href="#bucles">bucles</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="bucles-variable"><a href="#bucles-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="bucles" data-name="numero" data-type="variable"><a href="#bucles-variable-numero">numero</a></li><li class="sidebar__item sassdoc__item" data-group="bucles" data-name="numero-de-filas" data-type="variable"><a href="#bucles-variable-numero-de-filas">numero-de-filas</a></li><li class="sidebar__item sassdoc__item" data-group="bucles" data-name="lista-colores" data-type="variable"><a href="#bucles-variable-lista-colores">lista-colores</a></li><li class="sidebar__item sassdoc__item" data-group="bucles" data-name="numero-de-etiquetas" data-type="variable"><a href="#bucles-variable-numero-de-etiquetas">numero-de-etiquetas</a></li><li class="sidebar__item sassdoc__item" data-group="bucles" data-name="lista-size" data-type="variable"><a href="#bucles-variable-lista-size">lista-size</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="colores"><a href="#colores">colores</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="colores-variable"><a href="#colores-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fondo" data-type="variable"><a href="#colores-variable-color-fondo">color-fondo</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fondo-seccion" data-type="variable"><a href="#colores-variable-color-fondo-seccion">color-fondo-seccion</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-fuente" data-type="variable"><a href="#colores-variable-color-fuente">color-fuente</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-h2" data-type="variable"><a href="#colores-variable-color-h2">color-h2</a></li><li class="sidebar__item sassdoc__item" data-group="colores" data-name="color-link" data-type="variable"><a href="#colores-variable-color-link">color-link</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="dimensiones"><a href="#dimensiones">dimensiones</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="dimensiones-variable"><a href="#dimensiones-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="breakpoint-tablet" data-type="variable"><a href="#dimensiones-variable-breakpoint-tablet">breakpoint-tablet</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="breakpoint-pc" data-type="variable"><a href="#dimensiones-variable-breakpoint-pc">breakpoint-pc</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura" data-type="variable"><a href="#dimensiones-variable-anchura">anchura</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-hijos" data-type="variable"><a href="#dimensiones-variable-anchura-hijos">anchura-hijos</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-idioma-capacidad-pc" data-type="variable"><a href="#dimensiones-variable-anchura-idioma-capacidad-pc">anchura-idioma-capacidad-pc</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-div-menu" data-type="variable"><a href="#dimensiones-variable-anchura-div-menu">anchura-div-menu</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-foto-movil" data-type="variable"><a href="#dimensiones-variable-anchura-foto-movil">anchura-foto-movil</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-foto-tablet" data-type="variable"><a href="#dimensiones-variable-anchura-foto-tablet">anchura-foto-tablet</a></li><li class="sidebar__item sassdoc__item" data-group="dimensiones" data-name="anchura-foto-pc" data-type="variable"><a href="#dimensiones-variable-anchura-foto-pc">anchura-foto-pc</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="displays"><a href="#displays">displays</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="displays-variable"><a href="#displays-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="displays" data-name="display-hijos-main" data-type="variable"><a href="#displays-variable-display-hijos-main">display-hijos-main</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="display-hijos-categoria" data-type="variable"><a href="#displays-variable-display-hijos-categoria">display-hijos-categoria</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="display-main-pc" data-type="variable"><a href="#displays-variable-display-main-pc">display-main-pc</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="display-caja-table" data-type="variable"><a href="#displays-variable-display-caja-table">display-caja-table</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="display-menu" data-type="variable"><a href="#displays-variable-display-menu">display-menu</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="flex-wrap-menu-pc" data-type="variable"><a href="#displays-variable-flex-wrap-menu-pc">flex-wrap-menu-pc</a></li><li class="sidebar__item sassdoc__item" data-group="displays" data-name="flex-wrap-menu-movil" data-type="variable"><a href="#displays-variable-flex-wrap-menu-movil">flex-wrap-menu-movil</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="font-size"><a href="#font-size">font-size</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="font-size-variable"><a href="#font-size-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="font-size" data-name="font-size-movil" data-type="variable"><a href="#font-size-variable-font-size-movil">font-size-movil</a></li><li class="sidebar__item sassdoc__item" data-group="font-size" data-name="font-size-tablet" data-type="variable"><a href="#font-size-variable-font-size-tablet">font-size-tablet</a></li><li class="sidebar__item sassdoc__item" data-group="font-size" data-name="font-size-pc" data-type="variable"><a href="#font-size-variable-font-size-pc">font-size-pc</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="funciones"><a href="#funciones">funciones</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="funciones-function"><a href="#funciones-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="funciones" data-name="calcularAnchura" data-type="function"><a href="#funciones-function-calcularAnchura">calcularAnchura</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="temas"><a href="#temas">temas</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="temas-variable"><a href="#temas-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="temas" data-name="tema-oscuro" data-type="variable"><a href="#temas-variable-tema-oscuro">tema-oscuro</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".menu_sticky" data-type="css"><a href="#undefined-css-.menu_sticky">.menu_sticky</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6" data-type="css"><a href="#undefined-css-body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6">body, .container, h1, h2, h3, h4, h5, h6</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".container" data-type="css"><a href="#undefined-css-.container">.container</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="main" data-type="css"><a href="#undefined-css-main">main</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".foto" data-type="css"><a href="#undefined-css-.foto">.foto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".idiomas" data-type="css"><a href="#undefined-css-.idiomas">.idiomas</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&gt;div" data-type="css"><a href="#undefined-css-&gt;div">&gt;div</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".tabla_modulos" data-type="css"><a href="#undefined-css-.tabla_modulos">.tabla_modulos</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".etiquetas_size" data-type="css"><a href="#undefined-css-.etiquetas_size">.etiquetas_size</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="centrado_bloque" data-type="mixin"><a href="#undefined-mixin-centrado_bloque">centrado_bloque</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="centrado_enLinea" data-type="mixin"><a href="#undefined-mixin-centrado_enLinea">centrado_enLinea</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="bordes"><div class="container">bordes</div></h1><section class="main__sub-section" id="bordes-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="bordes-variable-borde-general"><h3 class="item__heading"><a class="item__name" href="#variable-borde-general">borde-general</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$borde-general: 2px solid black;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bordes-variable-borde-tabla"><h3 class="item__heading"><a class="item__name" href="#variable-borde-tabla">borde-tabla</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$borde-tabla: 1px solid black;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bordes-variable-radius-general"><h3 class="item__heading"><a class="item__name" href="#variable-radius-general">radius-general</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$radius-general: 5px;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="bucles"><div class="container">bucles</div></h1><section class="main__sub-section" id="bucles-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="bucles-variable-numero"><h3 class="item__heading"><a class="item__name" href="#variable-numero">numero</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$numero: 1;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bucles-variable-numero-de-filas"><h3 class="item__heading"><a class="item__name" href="#variable-numero-de-filas">numero-de-filas</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$numero-de-filas: 7;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bucles-variable-lista-colores"><h3 class="item__heading"><a class="item__name" href="#variable-lista-colores">lista-colores</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$lista-colores: green,
+red,
+rgb(255, 52, 177),
+rgb(62, 162, 255),
+yellow,
+gray,
+orange;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bucles-variable-numero-de-etiquetas"><h3 class="item__heading"><a class="item__name" href="#variable-numero-de-etiquetas">numero-de-etiquetas</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$numero-de-etiquetas: 6;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="bucles-variable-lista-size"><h3 class="item__heading"><a class="item__name" href="#variable-lista-size">lista-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$lista-size: 4rem,
+2.5rem,
+2.3rem,
+2rem,
+1.5rem,
+1.3rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="colores"><div class="container">colores</div></h1><section class="main__sub-section" id="colores-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="colores-variable-color-fondo"><h3 class="item__heading"><a class="item__name" href="#variable-color-fondo">color-fondo</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fondo: white;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-fondo-seccion"><h3 class="item__heading"><a class="item__name" href="#variable-color-fondo-seccion">color-fondo-seccion</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fondo-seccion: rgb(144, 170, 255);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-fuente"><h3 class="item__heading"><a class="item__name" href="#variable-color-fuente">color-fuente</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-fuente: black;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-h2"><h3 class="item__heading"><a class="item__name" href="#variable-color-h2">color-h2</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-h2: rgb(45, 101, 255);</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="colores-variable-color-link"><h3 class="item__heading"><a class="item__name" href="#variable-color-link">color-link</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-link: black;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="dimensiones"><div class="container">dimensiones</div></h1><section class="main__sub-section" id="dimensiones-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="dimensiones-variable-breakpoint-tablet"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoint-tablet">breakpoint-tablet</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoint-tablet: 576px;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAnchura"><code>calcularAnchura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-breakpoint-pc"><h3 class="item__heading"><a class="item__name" href="#variable-breakpoint-pc">breakpoint-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$breakpoint-pc: 992px;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAnchura"><code>calcularAnchura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura"><h3 class="item__heading"><a class="item__name" href="#variable-anchura">anchura</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura: 90%;</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAnchura"><code>calcularAnchura</code></a></li><li><span class="item__cross-type">[function]</span> <a href="#funciones-function-calcularAnchura"><code>calcularAnchura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-hijos"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-hijos">anchura-hijos</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-hijos: 90%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-idioma-capacidad-pc"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-idioma-capacidad-pc">anchura-idioma-capacidad-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-idioma-capacidad-pc: 40%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-div-menu"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-div-menu">anchura-div-menu</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-div-menu: 100%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-foto-movil"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-foto-movil">anchura-foto-movil</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-foto-movil: 30%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-foto-tablet"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-foto-tablet">anchura-foto-tablet</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-foto-tablet: 20%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="dimensiones-variable-anchura-foto-pc"><h3 class="item__heading"><a class="item__name" href="#variable-anchura-foto-pc">anchura-foto-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$anchura-foto-pc: 15%;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="displays"><div class="container">displays</div></h1><section class="main__sub-section" id="displays-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="displays-variable-display-hijos-main"><h3 class="item__heading"><a class="item__name" href="#variable-display-hijos-main">display-hijos-main</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$display-hijos-main: flex;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-display-hijos-categoria"><h3 class="item__heading"><a class="item__name" href="#variable-display-hijos-categoria">display-hijos-categoria</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$display-hijos-categoria: flex;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-display-main-pc"><h3 class="item__heading"><a class="item__name" href="#variable-display-main-pc">display-main-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$display-main-pc: flex;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-display-caja-table"><h3 class="item__heading"><a class="item__name" href="#variable-display-caja-table">display-caja-table</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$display-caja-table: flex;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-display-menu"><h3 class="item__heading"><a class="item__name" href="#variable-display-menu">display-menu</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$display-menu: flex;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-flex-wrap-menu-pc"><h3 class="item__heading"><a class="item__name" href="#variable-flex-wrap-menu-pc">flex-wrap-menu-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$flex-wrap-menu-pc: nowrap;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="displays-variable-flex-wrap-menu-movil"><h3 class="item__heading"><a class="item__name" href="#variable-flex-wrap-menu-movil">flex-wrap-menu-movil</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$flex-wrap-menu-movil: wrap;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="font-size"><div class="container">font-size</div></h1><section class="main__sub-section" id="font-size-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="font-size-variable-font-size-movil"><h3 class="item__heading"><a class="item__name" href="#variable-font-size-movil">font-size-movil</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-size-movil: 1.1rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="font-size-variable-font-size-tablet"><h3 class="item__heading"><a class="item__name" href="#variable-font-size-tablet">font-size-tablet</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-size-tablet: 1.2rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="font-size-variable-font-size-pc"><h3 class="item__heading"><a class="item__name" href="#variable-font-size-pc">font-size-pc</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$font-size-pc: 1.4rem;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="funciones"><div class="container">funciones</div></h1><div class="main__description"><div class="container"><p>Funcion calcular anchuras. La variable breakpoint pasada como parámetro determinará la anchura del container de la página.</p></div></div><section class="main__sub-section" id="funciones-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="funciones-function-calcularAnchura"><h3 class="item__heading"><a class="item__name" href="#function-calcularAnchura">calcularAnchura</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function calcularAnchura($breakpoint) { 
+
+    @if $breakpoint==$breakpoint-pc {
+        @return $anchura - 20%;
+    }
+
+    @else if $breakpoint==$breakpoint-tablet {
+        @return $anchura - 10%;
+    }
+
+ }" data-collapsed="@function calcularAnchura($breakpoint) { ... }"><code>@function calcularAnchura($breakpoint) { ... }</code></pre></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$breakpoint</code></th><td data-label="desc"><p>Valor de la anchura minima de la que dependera la anchura de elementos del breakpoint.</p></td><td data-label="type"><code>Pixel</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Funcion calcularAnchura</p></div><pre class="example__code language-scss"><code>width: calcularAnchura($breakpoint-tablet);</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-breakpoint-pc"><code>breakpoint-pc</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-anchura"><code>anchura</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-breakpoint-tablet"><code>breakpoint-tablet</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#dimensiones-variable-anchura"><code>anchura</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="temas"><div class="container">temas</div></h1><section class="main__sub-section" id="temas-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="temas-variable-tema-oscuro"><h3 class="item__heading"><a class="item__name" href="#variable-tema-oscuro">tema-oscuro</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$tema-oscuro: false;</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-.menu_sticky"><h3 class="item__heading"><a class="item__name" href="#css-.menu_sticky">.menu_sticky</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu_sticky {
+  @include centrado_enLinea;
+    background-color: $color-fondo;
+    border-bottom: $borde-general;
+    display: $display-menu;
+    flex-wrap: $flex-wrap-menu-movil;
+    position: sticky;
+    top: 0;
+
+    div {
+        background-color: $color-fondo-seccion;
+        padding: 10px;
+        width: $anchura-div-menu;
+
+        a {
+            color: $color-fuente;
+            text-decoration: none;
+        }
+    }
+}</code>" data-collapsed=".menu_sticky { ... }"><code>.menu_sticky { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos menu sticky</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6"><h3 class="item__heading"><a class="item__name" href="#css-body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6">body, .container, h1, h2, h3, h4, h5, h6</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}</code>" data-collapsed="body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { ... }"><code>body,
+.container,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Eliminar margen por defecto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-.container"><h3 class="item__heading"><a class="item__name" href="#css-.container">.container</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.container {
+  background-color: $color-fondo;
+    font-size: $font-size-movil;
+    color: $color-fuente;
+
+    h2 {
+        color: $color-h2;
+    }
+}</code>" data-collapsed=".container { ... }"><code>.container { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Cambiar tamaño de fuente a todos los elementos del container</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-main"><h3 class="item__heading"><a class="item__name" href="#css-main">main</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>main {
+  @include centrado_bloque;
+    width: $anchura;
+
+    ///Quitar modificaciones generales para la caja foto
+    .foto {
+        background-color: unset;
+        border: none;
+        padding-top: 20px;
+        width: 100%;
+
+        ///Modificar anchura y borde de la foto
+        img {
+            width: $anchura-foto-movil;
+            border: $borde-general;
+        }
+    }
+
+    ///Modificar elementos específicos de la caja idiomas
+    .idiomas {
+        @include centrado_enLinea;
+
+        div:nth-child(2) {
+            width: 100%;
+        }
+
+        a {
+            color: $color-link;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+
+    ///Modificaciones generales de las cajas hijas del main
+    &gt;div {
+        background-color: $color-fondo-seccion;
+        border: $borde-general;
+        border-radius: $radius-general;
+        display: $display-hijos-main;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 5px;
+
+        h2 {
+            width: 100%;
+        }
+
+        div {
+            display: $display-hijos-categoria;
+            flex-wrap: wrap;
+        }
+
+        p {
+            width: $anchura-hijos;
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+        }
+    }
+    ///Modificaciones especificas a la clase tabla_modulos
+    .tabla_modulos {
+        display: $display-caja-table;
+        justify-content: center;
+        width: 100%;
+
+        &gt;table {
+            margin: 20px;
+            border-spacing: 0;
+            width: 50%;
+
+            tr {
+                td {
+                    border: $borde-tabla;
+                }
+
+                td:nth-child(1) {
+                    text-align: start;
+                }
+
+                td:nth-child(2) {
+                    text-align: end;
+                }
+            }
+        }
+
+    }
+    ///Tamaño de las etiquetas
+    .etiquetas_size {
+        width: 100%;
+    }
+}</code>" data-collapsed="main { ... }"><code>main { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos del Main</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-.foto"><h3 class="item__heading"><a class="item__name" href="#css-.foto">.foto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.foto {
+  background-color: unset;
+        border: none;
+        padding-top: 20px;
+        width: 100%;
+
+        ///Modificar anchura y borde de la foto
+        img {
+            width: $anchura-foto-movil;
+            border: $borde-general;
+        }
+}</code>" data-collapsed=".foto { ... }"><code>.foto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Quitar modificaciones generales para la caja foto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  width: $anchura-foto-movil;
+            border: $borde-general;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificar anchura y borde de la foto</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-.idiomas"><h3 class="item__heading"><a class="item__name" href="#css-.idiomas">.idiomas</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.idiomas {
+  @include centrado_enLinea;
+
+        div:nth-child(2) {
+            width: 100%;
+        }
+
+        a {
+            color: $color-link;
+            text-decoration: none;
+            width: 100%;
+        }
+}</code>" data-collapsed=".idiomas { ... }"><code>.idiomas { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificar elementos específicos de la caja idiomas</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-&gt;div"><h3 class="item__heading"><a class="item__name" href="#css-&gt;div">&gt;div</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&gt;div {
+  background-color: $color-fondo-seccion;
+        border: $borde-general;
+        border-radius: $radius-general;
+        display: $display-hijos-main;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        padding: 5px;
+
+        h2 {
+            width: 100%;
+        }
+
+        div {
+            display: $display-hijos-categoria;
+            flex-wrap: wrap;
+        }
+
+        p {
+            width: $anchura-hijos;
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+        }
+}</code>" data-collapsed="&gt;div { ... }"><code>&gt;div { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificaciones generales de las cajas hijas del main</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-.tabla_modulos"><h3 class="item__heading"><a class="item__name" href="#css-.tabla_modulos">.tabla_modulos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.tabla_modulos {
+  display: $display-caja-table;
+        justify-content: center;
+        width: 100%;
+
+        &gt;table {
+            margin: 20px;
+            border-spacing: 0;
+            width: 50%;
+
+            tr {
+                td {
+                    border: $borde-tabla;
+                }
+
+                td:nth-child(1) {
+                    text-align: start;
+                }
+
+                td:nth-child(2) {
+                    text-align: end;
+                }
+            }
+        }
+}</code>" data-collapsed=".tabla_modulos { ... }"><code>.tabla_modulos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Modificaciones especificas a la clase tabla_modulos</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-css-.etiquetas_size"><h3 class="item__heading"><a class="item__name" href="#css-.etiquetas_size">.etiquetas_size</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.etiquetas_size {
+  width: 100%;
+}</code>" data-collapsed=".etiquetas_size { ... }"><code>.etiquetas_size { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Tamaño de las etiquetas</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-centrado_bloque"><h3 class="item__heading"><a class="item__name" href="#mixin-centrado_bloque">centrado_bloque</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin centrado_bloque() { 
+    margin: 0px auto;
+ }" data-collapsed="@mixin centrado_bloque() { ... }"><code>@mixin centrado_bloque() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para centrar un bloque en su padre</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section><section class="main__item container item" id="undefined-mixin-centrado_enLinea"><h3 class="item__heading"><a class="item__name" href="#mixin-centrado_enLinea">centrado_enLinea</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin centrado_enLinea() { 
+    text-align: center;
+ }" data-collapsed="@mixin centrado_enLinea() { ... }"><code>@mixin centrado_enLinea() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para centrar elementos en linea dentro de un bloque</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Salvador Muñoz</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Tarea_2_u8</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
